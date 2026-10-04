@@ -1,3 +1,5 @@
+import random
+import numpy as np
 
 def powertracker():
 
@@ -13,9 +15,6 @@ def powertracker():
     Returns the list of results.
 
     """
-
-    import random
-    import numpy as np
 
     results = []
     numiter = 1 # Starting the loop number as 1, so first loop = loop # 1
