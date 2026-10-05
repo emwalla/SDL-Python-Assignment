@@ -78,6 +78,7 @@ plt.legend(['Spectrum', 'Continuum Polynomial'])
 classic_plot()
 uncertainties_p = np.sqrt(np.diag(pcov_p))
 
+# Print statements about polynomial
 print(f'Fitted curve: {popt_p[0]:.4f} * x^2 + {popt_p[1]:.4f} * x + {popt_p[2]:.4f}')
 print(f'Uncertanties: a: {uncertainties_p[0]:.5f}, b: {uncertainties_p[1]:.5f}, c: {uncertainties_p[2]:.5f}')
 
@@ -93,6 +94,7 @@ plt.legend(['Spectrum', 'Continuum Polynomial', 'Gaussian'])
 classic_plot()
 uncertainties_g = np.sqrt(np.diag(pcov_g)) # Uncertainties
 
+# Print statements about Gaussian
 print(f'Amplitude: {popt_g[0]:.2f} +/- {uncertainties_g[0]:.2f} ADU')
 print(f'Central Wavelength: {popt_g[1]:.2f} +/- {uncertainties_g[1]:.2f} Å') # Position at center of peak
 print(f'Variance: {popt_g[2]:.2f} Å ^ 2 = {popt_g[2] ** 2:.2f} Å^2')
