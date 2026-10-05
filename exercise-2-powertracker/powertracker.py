@@ -12,8 +12,6 @@ def powertracker():
     then prints the largest and smallest results, the result that caused the loop to break, 
     and the total number of iterations.
 
-    Returns the list of results.
-
     """
 
     results = []
