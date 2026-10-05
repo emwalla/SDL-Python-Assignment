@@ -18,6 +18,7 @@ y_axes = list(apollo2.keys()) # Names of all the columns
 y_axes_key = 0
 
 # Create graphs of every column vs time on a 4x3 grid
+# Iterating over all columns
 fig, axs = plt.subplots(4, 3)
 for i in range(4):
     for j in range(3):
